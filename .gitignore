@@ -1,0 +1,5 @@
+*.iml
+.idea/
+src/cc/techtips/leetcode/editor/cn/all.json
+src/cc/techtips/leetcode/editor/cn/translation.json
+out/
