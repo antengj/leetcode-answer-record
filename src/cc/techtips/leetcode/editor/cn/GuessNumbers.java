@@ -21,7 +21,7 @@
 
 package cc.techtips.leetcode.editor.cn;
 
-public class GuessNumbers{
+public class GuessNumbers {
     public static void main(String[] args) {
         Solution solution = new GuessNumbers().new Solution();
         System.out.println(solution.game(new int[]{1,2,3}, new int[]{1,2,3}));
