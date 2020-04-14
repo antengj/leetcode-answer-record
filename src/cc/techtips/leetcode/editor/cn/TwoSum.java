@@ -11,27 +11,16 @@
  */
 package cc.techtips.leetcode.editor.cn;
 
+import java.util.Arrays;
+
 public class TwoSum {
     public static void main(String[] args) {
-
         Solution solution = new TwoSum().new Solution();
-        System.out.println(TwoSum.intArrayToString(solution.twoSum(new int[]{2, 7, 11, 15}, 9)));
-        System.out.println(TwoSum.intArrayToString(solution.twoSum(new int[]{3, 2, 4}, 6)));
-        System.out.println(TwoSum.intArrayToString(solution.twoSum(new int[]{3, 3}, 6)));
-        System.out.println(TwoSum.intArrayToString(solution.twoSum(new int[]{0, 4, 3, 0}, 0)));
-        System.out.println(TwoSum.intArrayToString(solution.twoSum(new int[]{-3, 4, 3, 90}, 0)));
-    }
-
-    private static String intArrayToString(int[] intArray) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        for (int i = 0; i < intArray.length; i++) {
-            sb.append(intArray[i]);
-            if (i != intArray.length - 1)
-                sb.append(",");
-        }
-        sb.append("]");
-        return sb.toString();
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 2, 4}, 6)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 3}, 6)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{0, 4, 3, 0}, 0)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{-3, 4, 3, 90}, 0)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -31,24 +31,14 @@
  */
 package cc.techtips.leetcode.editor.cn;
 
+import java.util.Arrays;
+
 public class HowManyNumbersAreSmallerThanTheCurrentNumber {
     public static void main(String[] args) {
         Solution solution = new HowManyNumbersAreSmallerThanTheCurrentNumber().new Solution();
-        System.out.println(HowManyNumbersAreSmallerThanTheCurrentNumber.intArrayToString(solution.smallerNumbersThanCurrent(new int[]{8,1,2,2,3})));
-        System.out.println(HowManyNumbersAreSmallerThanTheCurrentNumber.intArrayToString(solution.smallerNumbersThanCurrent(new int[]{6,5,4,8})));
-        System.out.println(HowManyNumbersAreSmallerThanTheCurrentNumber.intArrayToString(solution.smallerNumbersThanCurrent(new int[]{7,7,7,7})));
-    }
-
-    private static String intArrayToString(int[] intArray) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        for (int i = 0; i < intArray.length; i++) {
-            sb.append(intArray[i]);
-            if (i != intArray.length - 1)
-                sb.append(",");
-        }
-        sb.append("]");
-        return sb.toString();
+        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(new int[]{8, 1, 2, 2, 3})));
+        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(new int[]{6,5,4,8})));
+        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(new int[]{7,7,7,7})));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
