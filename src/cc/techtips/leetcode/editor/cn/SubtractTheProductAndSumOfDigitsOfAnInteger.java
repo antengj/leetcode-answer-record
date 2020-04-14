@@ -27,9 +27,9 @@ package cc.techtips.leetcode.editor.cn;
 public class SubtractTheProductAndSumOfDigitsOfAnInteger {
     public static void main(String[] args) {
         Solution solution = new SubtractTheProductAndSumOfDigitsOfAnInteger().new Solution();
+        System.out.println(solution.subtractProductAndSum(234));
+        System.out.println(solution.subtractProductAndSum(4421));
     }
-
-    //leetcode submit region begin(Prohibit modification and deletion)
 
     /**
      * 解题思路:
@@ -38,7 +38,7 @@ public class SubtractTheProductAndSumOfDigitsOfAnInteger {
      *   执行耗时:0 ms,击败了100.00% 的Java用户
      *   内存消耗:36.5 MB,击败了6.06% 的Java用户
      */
-    class Solution {
+    class Solution_1 {
         public int subtractProductAndSum(int n) {
 
             String number = String.valueOf(n);
@@ -49,6 +49,28 @@ public class SubtractTheProductAndSumOfDigitsOfAnInteger {
                 int j = Character.getNumericValue(number.charAt(i));
                 x *= j;
                 y += j;
+            }
+            return x - y;
+        }
+    }
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 解题思路:
+     *   通过取模, 取出每个数字
+     * 结果:
+     *   执行耗时:0 ms,击败了100.00% 的Java用户
+     *   内存消耗:36.6 MB,击败了6.06% 的Java用户
+     */
+    class Solution {
+        public int subtractProductAndSum(int n) {
+            int x = 1;
+            int y = 0;
+            while (n > 0) {
+                int a = n % 10;
+                n = n / 10;
+                x *= a;
+                y += a;
             }
             return x - y;
         }
