@@ -22,7 +22,7 @@ package cc.techtips.leetcode.editor.cn;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ZuoXuanZhuanZiFuChuanLcof{
+public class ZuoXuanZhuanZiFuChuanLcof {
 
     public static void main(String[] args) {
         Solution solution = new ZuoXuanZhuanZiFuChuanLcof().new Solution();
@@ -30,7 +30,6 @@ public class ZuoXuanZhuanZiFuChuanLcof{
         System.out.println(solution.reverseLeftWords("lrloseumgh", 6));
     }
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     /**
      * 解题思路:
      *   用一个队列将字符串每一个字母按顺序放入,
@@ -40,7 +39,7 @@ public class ZuoXuanZhuanZiFuChuanLcof{
      *   执行耗时:20 ms,击败了5.57% 的Java用户
      *   内存消耗:40.4 MB,击败了100.00% 的Java用户
      */
-    class Solution {
+    class Solution_1 {
         public String reverseLeftWords(String s, int n) {
 
             Queue<Character> queue = new LinkedList<Character>();
@@ -57,6 +56,21 @@ public class ZuoXuanZhuanZiFuChuanLcof{
                 sb.append(queue.remove());
             }
             return sb.toString();
+        }
+    }
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 解题思路:
+     *   直接将需要放入尾部的字符截取出来放入尾部
+     * 结果:
+     *   执行耗时:0 ms,击败了100.00% 的Java用户
+     *   内存消耗:40 MB,击败了100.00% 的Java用户
+     */
+    class Solution {
+        public String reverseLeftWords(String s, int n) {
+
+            return s.substring(n, s.length()) + s.substring(0, n);
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
