@@ -46,7 +46,6 @@ public class SubtractTheProductAndSumOfDigitsOfAnInteger {
             String number = String.valueOf(n);
             int x = 1;
             int y = 0;
-
             for(int i = 0; i < number.length(); i++)  {
                 int j = Character.getNumericValue(number.charAt(i));
                 x *= j;
