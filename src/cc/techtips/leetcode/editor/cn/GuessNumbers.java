@@ -44,8 +44,9 @@ public class GuessNumbers {
         public int game(int[] guess, int[] answer) {
             int j = 0;
             for (int i = 0; i < 3; i++) {
-                if (guess[i] == answer[i])
+                if (guess[i] == answer[i]) {
                     j++;
+                }
             }
             return j;
         }
