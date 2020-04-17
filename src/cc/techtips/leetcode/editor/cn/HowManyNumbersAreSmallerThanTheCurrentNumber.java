@@ -57,8 +57,9 @@ public class HowManyNumbersAreSmallerThanTheCurrentNumber {
                 int count = 0;
                 for (int j = 0; j < nums.length; j++) {
                     if (i != j) {
-                        if (nums[j] < nums[i])
+                        if (nums[j] < nums[i]) {
                             count++;
+                        }
                     }
                 }
                 rel[i] = count;
