@@ -13,15 +13,17 @@ package cc.techtips.leetcode.editor.cn;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class EncodeAndDecodeTinyurl {
     public static void main(String[] args) {
         Codec codec = new EncodeAndDecodeTinyurl().new Codec();
-        System.out.println(codec.encode("https://www.163.com"));
-        System.out.println(codec.decode("http://tinyurl.com/1936475835"));
+        String url = "https://www.163.com";
+        String shortUrl = codec.encode(url);
+        System.out.println(shortUrl);
+        System.out.println(codec.decode(shortUrl));
     }
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     /**
      * 解题思路:
      *   将url的hashcode做为key, url做为value存入HashMap
@@ -29,7 +31,7 @@ public class EncodeAndDecodeTinyurl {
      *   执行耗时:9 ms,击败了33.45% 的Java用户
      *   内存消耗:39.9 MB,击败了12.50% 的Java用户
      */
-    public class Codec {
+    public class Codec_1 {
 
         private Map<Integer, String> map = new HashMap<>();
 
@@ -44,6 +46,45 @@ public class EncodeAndDecodeTinyurl {
         public String decode(String shortUrl) {
             String longUrlHashCode = shortUrl.replace("http://tinyurl.com/", "");
             return map.get(Integer.parseInt(longUrlHashCode));
+        }
+    }
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 解题思路:
+     *   在0-9a-zA-Z中, 随机出一个字符串做为key, 也作为shortUrl, url做为value存入HashMap
+     * 结果:
+     *   执行耗时:6 ms,击败了50.53% 的Java用户
+     *   内存消耗:40.1 MB,击败了12.50% 的Java用户
+     */
+    public class Codec {
+
+        private Map<String, String> map = new HashMap<>();
+
+        private String getShortUrl() {
+            StringBuilder sb = new StringBuilder();
+            Random random = new Random();
+            String alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            for (int i = 0; i < 6; i++) {
+                sb.append(alphabet.charAt(random.nextInt(62)));
+            }
+            return sb.toString();
+        }
+
+        // Encodes a URL to a shortened URL.
+        public String encode(String longUrl) {
+
+            String shortUrl = getShortUrl();
+            while (map.containsValue(shortUrl)) {
+                shortUrl = getShortUrl();
+            }
+            map.put(shortUrl, longUrl);
+            return "http://tinyurl.com/" + shortUrl;
+        }
+
+        // Decodes a shortened URL to its original URL.
+        public String decode(String shortUrl) {
+            return map.get(shortUrl.replace("http://tinyurl.com/", ""));
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
