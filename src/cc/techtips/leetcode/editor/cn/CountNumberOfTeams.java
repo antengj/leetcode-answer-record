@@ -45,6 +45,8 @@ public class CountNumberOfTeams {
      * 结果:
      *   执行耗时:20 ms,击败了63.60% 的Java用户
      *   内存消耗:37.4 MB,击败了100.00% 的Java用户
+     * 时间复杂度:
+     *   O(n³)
      */
     class Solution {
         public int numTeams(int[] rating) {
@@ -64,4 +66,5 @@ public class CountNumberOfTeams {
     }
     //leetcode submit region end(Prohibit modification and deletion)
 
+    // TODO 需要更优算法
 }
