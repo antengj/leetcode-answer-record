@@ -37,14 +37,6 @@ public class DeleteNodeInALinkedList {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     /**
-     * Definition for singly-linked list.
-     * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode(int x) { val = x; }
-     * }
-     */
-    /**
      * 解题思路:
      *   将node的值修改为nextnode的值,
      *   将node的next修改为nextnode的next,
