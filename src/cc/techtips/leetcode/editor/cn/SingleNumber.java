@@ -27,8 +27,7 @@ public class SingleNumber {
         System.out.println(solution.singleNumber(new int[] {4,1,2,1,2}));
     }
 
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    class Solution_1 {
         public int singleNumber(int[] nums) {
             HashSet<Integer> hashSet = new HashSet<>();
             for (int i = 0; i < nums.length; i++) {
@@ -43,6 +42,17 @@ public class SingleNumber {
             }
             // 根据题目给定的规则, 最后HashSet只能包含一个数字, 所以直接返回这个数字
             return hashSet.iterator().next();
+        }
+    }
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int singleNumber(int[] nums) {
+            // a^b^a = a^a^b = 0^b = b, 所以数组中的所有数异或后, 即可找出单独的一个数字
+            for (int i = 1; i < nums.length; i++) {
+                nums[0] ^= nums[i];
+            }
+            return nums[0];
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
