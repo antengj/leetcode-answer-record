@@ -1,3 +1,8 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @title 1431. 拥有最多糖果的孩子
  * @link https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/
@@ -28,14 +33,9 @@
  *      提示：
  *      2 <= candies.length <= 100
  *      1 <= candies[i] <= 100
- *      1 <= extraCandies <= 50 
+ *      1 <= extraCandies <= 50
  * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class KidsWithTheGreatestNumberOfCandies {
     public static void main(String[] args) {
         Solution solution = new KidsWithTheGreatestNumberOfCandies().new Solution();

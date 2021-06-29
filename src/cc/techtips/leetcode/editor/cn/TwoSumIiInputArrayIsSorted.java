@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 167. 两数之和 II - 输入有序数组
  * @link https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
@@ -28,10 +32,6 @@
  *      仅存在一个有效答案
  *  @tags 数组 双指针 二分查找
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class TwoSumIiInputArrayIsSorted {
     public static void main(String[] args) {
         Solution solution = new TwoSumIiInputArrayIsSorted().new Solution();

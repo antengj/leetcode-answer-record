@@ -1,3 +1,8 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @title 面试题58 - II. 左旋转字符串
  * @link https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/
@@ -14,13 +19,8 @@
  *      输出: "umghlrlose"
  *
  *      限制： 1 <= k < s.length <= 10000
- * @topic 字符串
+ * @tags 字符串
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class ZuoXuanZhuanZiFuChuanLcof {
 
     public static void main(String[] args) {

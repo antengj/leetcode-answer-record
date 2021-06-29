@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.*;
+
 /**
  * @title 349. 两个数组的交集
  * @link https://leetcode-cn.com/problems/intersection-of-two-arrays/
@@ -17,10 +21,6 @@
  *      我们可以不考虑输出结果的顺序。
  * @tags 排序 哈希表 双指针 二分查找
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.*;
-
 public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
         Solution solution = new IntersectionOfTwoArrays().new Solution();

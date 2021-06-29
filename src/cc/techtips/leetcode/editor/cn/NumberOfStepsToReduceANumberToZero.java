@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 1342. 将数字变成 0 的操作次数
  * @link https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/
@@ -30,10 +32,8 @@
  *
  *      提示：
  *      0 <= num <= 10^6
- * @topic 位运算
+ * @tags 位运算
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class NumberOfStepsToReduceANumberToZero {
     public static void main(String[] args) {
         Solution solution = new NumberOfStepsToReduceANumberToZero().new Solution();

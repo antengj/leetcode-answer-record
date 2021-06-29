@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 面试题64. 求1+2+…+n
  * @link https://leetcode-cn.com/problems/qiu-12n-lcof/
@@ -13,10 +15,8 @@
  *      输出: 45
  *      限制：
  *      1 <= n <= 10000
- * @tags
+ * @tags 位运算, 递归
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class Qiu12nLcof {
     public static void main(String[] args) {
         Solution solution = new Qiu12nLcof().new Solution();

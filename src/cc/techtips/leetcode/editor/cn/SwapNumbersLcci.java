@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 面试题 16.01. 交换数字
  * @link https://leetcode-cn.com/problems/swap-numbers-lcci/
@@ -10,12 +14,8 @@
  *
  *      提示：
  *      numbers.length == 2
- * @topic 位运算 数学
+ * @tags 位运算 数学
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class SwapNumbersLcci {
     public static void main(String[] args) {
         Solution solution = new SwapNumbersLcci().new Solution();

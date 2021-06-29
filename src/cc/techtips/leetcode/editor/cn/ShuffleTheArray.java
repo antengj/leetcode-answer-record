@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 1470. 重新排列数组
  * @link https://leetcode-cn.com/problems/shuffle-the-array/
@@ -21,13 +25,9 @@
  *      提示：
  *      1 <= n <= 500
  *      nums.length == 2n
- *      1 <= nums[i] <= 10^3 
+ *      1 <= nums[i] <= 10^3
  * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class ShuffleTheArray {
     public static void main(String[] args) {
         Solution solution = new ShuffleTheArray().new Solution();

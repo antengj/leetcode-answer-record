@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 704. 二分查找
  * @link https://leetcode-cn.com/problems/binary-search/
@@ -20,9 +22,7 @@
  *      n 将在 [1, 10000]之间。
  *      nums 的每个元素都将在 [-9999, 9999]之间。
  * @tags 二分查找
-**/
-package cc.techtips.leetcode.editor.cn;
-
+ */
 public class BinarySearch {
     public static void main(String[] args) {
         Solution solution = new BinarySearch().new Solution();

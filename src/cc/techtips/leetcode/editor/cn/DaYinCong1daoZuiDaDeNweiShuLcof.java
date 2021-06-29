@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 面试题17. 打印从1到最大的n位数
  * @link https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/
@@ -10,13 +14,9 @@
  *
  *      说明：
  *      用返回一个整数列表来代替打印
- *      n 为正整数 
- * @topic 数学
+ *      n 为正整数
+ * @tags 数学
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class DaYinCong1daoZuiDaDeNweiShuLcof {
     public static void main(String[] args) {
         Solution solution = new DaYinCong1daoZuiDaDeNweiShuLcof().new Solution();

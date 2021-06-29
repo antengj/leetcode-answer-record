@@ -1,3 +1,9 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @title 238. 除自身以外数组的乘积
  * @link https://leetcode-cn.com/problems/product-of-array-except-self/
@@ -17,12 +23,6 @@
  *      你可以在常数空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组不被视为额外空间。）
  * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
         Solution solution = new ProductOfArrayExceptSelf().new Solution();

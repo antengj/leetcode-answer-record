@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 5436. 一维数组的动态和
  * @link https://leetcode-cn.com/problems/running-sum-of-1d-array/
@@ -21,13 +25,9 @@
  *
  *      提示：
  *      1 <= nums.length <= 1000
- *      -10^6 <= nums[i] <= 10^6 
+ *      -10^6 <= nums[i] <= 10^6
  * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class RunningSumOf1dArray {
     public static void main(String[] args) {
         Solution solution = new RunningSumOf1dArray().new Solution();

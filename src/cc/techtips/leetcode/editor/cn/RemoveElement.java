@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 27. 移除元素
  * @link https://leetcode-cn.com/problems/remove-element/
@@ -37,11 +41,6 @@
  *      0 <= val <= 100
  * @tags 数组 双指针
  */
-
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class RemoveElement {
     public static void main(String[] args) {
         Solution solution = new RemoveElement().new Solution();

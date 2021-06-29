@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 26. 删除排序数组中的重复项
  * @link https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
@@ -28,10 +32,6 @@
  *      }
  * @tags 数组 双指针
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedArray().new Solution();

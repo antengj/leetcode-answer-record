@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Arrays;
+
 /**
  * @title 912. 排序数组
  * @link https://leetcode-cn.com/problems/sort-an-array/
@@ -15,12 +19,8 @@
  *      提示：
  *      1 <= nums.length <= 50000
  *      -50000 <= nums[i] <= 50000
- * @tags
+ * @tags 数组, 分治, 桶排序, 计数排序, 基数排序, 排序, 堆(优先队列), 归并排序
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Arrays;
-
 public class SortAnArray {
     public static void main(String[] args) {
         Solution solution = new SortAnArray().new Solution();

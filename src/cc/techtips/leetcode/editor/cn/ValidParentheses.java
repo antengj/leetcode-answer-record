@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Stack;
+
 /**
  * @title 20. 有效的括号
  * @link https://leetcode-cn.com/problems/valid-parentheses/
@@ -23,16 +27,12 @@
  *      示例 4:
  *      输入: "([)]"
  *      输出: false
- *    
+ *
  *      示例 5:
  *      输入: "{[]}"
  *      输出: true
  * @tags 栈 字符串
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Stack;
-
 public class ValidParentheses {
     public static void main(String[] args) {
         Solution solution = new ValidParentheses().new Solution();

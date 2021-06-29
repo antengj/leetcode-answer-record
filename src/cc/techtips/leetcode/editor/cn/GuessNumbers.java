@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title LCP 1. 猜数字
  * @link https://leetcode-cn.com/problems/guess-numbers/
@@ -21,9 +23,8 @@
  *      answer的长度 = 3
  *      guess的元素取值为 {1, 2, 3} 之一。
  *      answer的元素取值为 {1, 2, 3} 之一。
+ * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class GuessNumbers {
     public static void main(String[] args) {
         Solution solution = new GuessNumbers().new Solution();

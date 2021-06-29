@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 237. 删除链表中的节点
  * @link https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
@@ -20,10 +22,8 @@
  *      链表中所有节点的值都是唯一的。
  *      给定的节点为非末尾节点并且一定是链表中的一个有效节点。
  *      不要从你的函数中返回任何结果。 
- * @topic 链表
+ * @tags 链表
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class DeleteNodeInALinkedList {
     public static void main(String[] args) {
         Solution solution = new DeleteNodeInALinkedList().new Solution();

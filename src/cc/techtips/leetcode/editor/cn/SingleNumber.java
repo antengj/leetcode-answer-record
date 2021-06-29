@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.HashSet;
+
 /**
  * @title 136. 只出现一次的数字
  * @link https://leetcode-cn.com/problems/single-number/
@@ -16,10 +20,6 @@
  *      输出: 4
  * @tags 位运算 哈希表
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.HashSet;
-
 public class SingleNumber {
     public static void main(String[] args) {
         Solution solution = new SingleNumber().new Solution();

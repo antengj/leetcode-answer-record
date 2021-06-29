@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 1395. 统计作战单位数
  * @link https://leetcode-cn.com/problems/count-number-of-teams/
@@ -25,11 +27,9 @@
  *      提示：
  *      n == rating.length
  *      1 <= n <= 200
- *      1 <= rating[i] <= 10^5 
- * @topic 数组
+ *      1 <= rating[i] <= 10^5
+ * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class CountNumberOfTeams {
     public static void main(String[] args) {
         Solution solution = new CountNumberOfTeams().new Solution();

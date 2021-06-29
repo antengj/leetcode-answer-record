@@ -1,3 +1,7 @@
+package cc.techtips.leetcode.editor.cn;
+
+import java.util.Stack;
+
 /**
  * @title 1221. 分割平衡字符串
  * @link https://leetcode-cn.com/problems/split-a-string-in-balanced-strings/
@@ -24,13 +28,9 @@
  *      提示：
  *      1 <= s.length <= 1000
  *      s[i] = 'L' 或 'R'
- *      分割得到的每个字符串都必须是平衡字符串。 
- * @topic 贪心算法 字符串
+ *      分割得到的每个字符串都必须是平衡字符串。
+ * @tags 贪心算法 字符串
  */
-package cc.techtips.leetcode.editor.cn;
-
-import java.util.Stack;
-
 public class SplitAStringInBalancedStrings {
     public static void main(String[] args) {
         Solution solution = new SplitAStringInBalancedStrings().new Solution();

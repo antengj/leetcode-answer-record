@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 1450. 在既定时间做作业的学生人数
  * @link https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time/
@@ -36,11 +38,9 @@
  *      startTime.length == endTime.length
  *      1 <= startTime.length <= 100
  *      1 <= startTime[i] <= endTime[i] <= 1000
- *      1 <= queryTime <= 1000 
+ *      1 <= queryTime <= 1000
  * @tags 数组
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class NumberOfStudentsDoingHomeworkAtAGivenTime {
     public static void main(String[] args) {
         Solution solution = new NumberOfStudentsDoingHomeworkAtAGivenTime().new Solution();

@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 面试题 02.03. 删除中间节点
  * @link https://leetcode-cn.com/problems/delete-middle-node-lcci/
@@ -7,10 +9,8 @@
  *      示例：
  *      输入：单向链表a->b->c->d->e->f中的节点c
  *      结果：不返回任何数据，但该链表变为a->b->d->e->f
- * @topic 链表
+ * @tags 链表
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class DeleteMiddleNodeLcci {
     public static void main(String[] args) {
         Solution solution = new DeleteMiddleNodeLcci().new Solution();

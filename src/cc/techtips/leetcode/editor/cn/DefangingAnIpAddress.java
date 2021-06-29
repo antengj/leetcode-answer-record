@@ -1,3 +1,5 @@
+package cc.techtips.leetcode.editor.cn;
+
 /**
  * @title 1108. IP 地址无效化
  * @link https://leetcode-cn.com/problems/defanging-an-ip-address/
@@ -15,10 +17,8 @@
  *
  *      提示：
  *      给出的 address 是一个有效的 IPv4 地址
- * @topic 字符串
+ * @tags 字符串
  */
-package cc.techtips.leetcode.editor.cn;
-
 public class DefangingAnIpAddress {
     public static void main(String[] args) {
         Solution solution = new DefangingAnIpAddress().new Solution();
